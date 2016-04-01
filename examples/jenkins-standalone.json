@@ -1,11 +1,11 @@
 {
   "id": "jenkins",
-  "cmd": "cd jenkins-standalone-master && ./jenkins-standalone.sh -z $(cat /etc/mesos/zk) -r 10.1.0.18:6379",
-  "mem": 256.0,
-  "cpus": 0.5,
+  "cmd": "cd jenkins-mesos-deployment-master && ./jenkins-standalone.sh -z $(cat /etc/mesos/zk) -r 10.1.0.18:6379",
+  "mem": 512.0,
+  "cpus": 0.1,
   "disk": 0.0,
   "instances": 1,
   "uris": [
-      "https://github.com/rji/jenkins-standalone/archive/master.tar.gz"
+      "https://github.com/diatmpravin/jenkins-mesos-deployment/archive/master.tar.gz"
   ]
 }
