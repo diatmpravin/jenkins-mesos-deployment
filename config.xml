@@ -12,7 +12,7 @@
   <securityRealm class="hudson.security.SecurityRealm$None"/>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
-  <workspaceDir>/home/ubuntu/jenkins/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
@@ -36,7 +36,7 @@
           <executorCpus>0.1</executorCpus>
           <maxExecutors>2</maxExecutors>
           <executorMem>128</executorMem>
-          <remoteFSRoot>${JENKINS_HOME}</remoteFSRoot>
+          <remoteFSRoot>pravin</remoteFSRoot>
           <idleTerminationMinutes>1</idleTerminationMinutes>
           <jvmArgs>-Xms16m -XX:+UseConcMarkSweepGC -Djava.net.preferIPv4Stack=true</jvmArgs>
           <jnlpArgs></jnlpArgs>
