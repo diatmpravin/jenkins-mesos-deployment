@@ -110,7 +110,7 @@ else
 fi
 
 # Start the master
-export JENKINS_HOME="$(pwd)"
+export JENKINS_HOME="$(HOME)"
 java \
     -Dhudson.DNSMultiCast.disabled=true            \
     -Dhudson.udp=-1                                \
