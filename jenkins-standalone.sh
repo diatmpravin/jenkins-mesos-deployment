@@ -110,7 +110,7 @@ else
 fi
 
 # Start the master
-export JENKINS_HOME="/tmp/mesos/volumes/roles/foo/"
+export JENKINS_HOME="$(pwd)"
 java \
     -Dhudson.DNSMultiCast.disabled=true            \
     -Dhudson.udp=-1                                \
