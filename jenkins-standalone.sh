@@ -110,7 +110,7 @@ else
 fi
 
 # Start the master
-#export JNDI="/home/ubuntu/jenkins-1/"
+export JNDI="/home/ubuntu/jenkins-2/"
 #export JENKINS_HOME="/home/ubuntu/jenkins-1/"
 export JENKINS_HOME="$(pwd)"
 java \
