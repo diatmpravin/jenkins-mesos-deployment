@@ -110,9 +110,9 @@ else
 fi
 
 # Start the master
-export JNDI="/home/ubuntu/jenkins-1/"
-export JENKINS_HOME="/home/ubuntu/jenkins-1/"
-#export JENKINS_HOME="$(pwd)"
+#export JNDI="/home/ubuntu/jenkins-1/"
+#export JENKINS_HOME="/home/ubuntu/jenkins-1/"
+export JENKINS_HOME="$(pwd)"
 java \
     -Dhudson.DNSMultiCast.disabled=true            \
     -Dhudson.udp=-1                                \
