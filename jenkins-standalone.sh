@@ -112,7 +112,10 @@ fi
 # Start the master
 #export JNDI="$(pwd)"
 #export JENKINS_HOME="/home/ubuntu/jenkins"
+JENKINS_CONF ="$(pwd)/*"
 export JENKINS_HOME="$(pwd)/../jenkinsdata"
+cp -R $JENKINS_CONF $JENKINS_HOME
+
 java \
     -Dhudson.DNSMultiCast.disabled=true            \
     -Dhudson.udp=-1                                \
