@@ -116,7 +116,7 @@ fi
 JENKINS_CONF="$(pwd)/*"
 #JENKINS_DEST="$(pwd)/../jenkinsdata"
 
-export JENKINS_HOME="$(pwd)/../jenkins1"
+export JENKINS_HOME="$(pwd)/../jenkinsdata"
 cp -R $JENKINS_CONF $JENKINS_HOME
 
 java \
